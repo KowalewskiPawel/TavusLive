@@ -1,4 +1,4 @@
-# 📱 AI Phone Inhabitant
+# 📱 VIVID - AI Phone Inhabitant
 
 > **The world's first truly immersive AI companion that lives inside your iPhone**
 
