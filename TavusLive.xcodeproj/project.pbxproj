@@ -6,13 +6,32 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8F3AC4432DFC47CF00C8612B /* LiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8F3AC4422DFC47CF00C8612B /* LiveKit */; };
+		8F3AC4622E00B58700C8612B /* Daily in Frameworks */ = {isa = PBXBuildFile; productRef = 8F3AC4612E00B58700C8612B /* Daily */; };
+		8F3AC4642E00B58700C8612B /* DailySystemBroadcast in Frameworks */ = {isa = PBXBuildFile; productRef = 8F3AC4632E00B58700C8612B /* DailySystemBroadcast */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		8F3AC4302DFC474300C8612B /* TavusLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TavusLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8F3AC44D2DFC6A2600C8612B /* Exceptions for "TavusLive" folder in "TavusLive" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8F3AC42F2DFC474300C8612B /* TavusLive */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8F3AC4322DFC474300C8612B /* TavusLive */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8F3AC44D2DFC6A2600C8612B /* Exceptions for "TavusLive" folder in "TavusLive" target */,
+			);
 			path = TavusLive;
 			sourceTree = "<group>";
 		};
@@ -23,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F3AC4622E00B58700C8612B /* Daily in Frameworks */,
+				8F3AC4432DFC47CF00C8612B /* LiveKit in Frameworks */,
+				8F3AC4642E00B58700C8612B /* DailySystemBroadcast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +87,9 @@
 			);
 			name = TavusLive;
 			packageProductDependencies = (
+				8F3AC4422DFC47CF00C8612B /* LiveKit */,
+				8F3AC4612E00B58700C8612B /* Daily */,
+				8F3AC4632E00B58700C8612B /* DailySystemBroadcast */,
 			);
 			productName = TavusLive;
 			productReference = 8F3AC4302DFC474300C8612B /* TavusLive.app */;
@@ -94,6 +119,10 @@
 			);
 			mainGroup = 8F3AC4272DFC474300C8612B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8F3AC4412DFC47CF00C8612B /* XCRemoteSwiftPackageReference "client-sdk-swift" */,
+				8F3AC4602E00B58700C8612B /* XCRemoteSwiftPackageReference "daily-client-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8F3AC4312DFC474300C8612B /* Products */;
 			projectDirPath = "";
@@ -255,6 +284,9 @@
 				DEVELOPMENT_TEAM = 8T43S264Q5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TavusLive/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "It's needed";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = Also;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +316,9 @@
 				DEVELOPMENT_TEAM = 8T43S264Q5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TavusLive/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "It's needed";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = Also;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,6 +359,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F3AC4412DFC47CF00C8612B /* XCRemoteSwiftPackageReference "client-sdk-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/livekit/client-sdk-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.0;
+			};
+		};
+		8F3AC4602E00B58700C8612B /* XCRemoteSwiftPackageReference "daily-client-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daily-co/daily-client-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.31.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F3AC4422DFC47CF00C8612B /* LiveKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F3AC4412DFC47CF00C8612B /* XCRemoteSwiftPackageReference "client-sdk-swift" */;
+			productName = LiveKit;
+		};
+		8F3AC4612E00B58700C8612B /* Daily */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F3AC4602E00B58700C8612B /* XCRemoteSwiftPackageReference "daily-client-ios" */;
+			productName = Daily;
+		};
+		8F3AC4632E00B58700C8612B /* DailySystemBroadcast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F3AC4602E00B58700C8612B /* XCRemoteSwiftPackageReference "daily-client-ios" */;
+			productName = DailySystemBroadcast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8F3AC4282DFC474300C8612B /* Project object */;
 }
