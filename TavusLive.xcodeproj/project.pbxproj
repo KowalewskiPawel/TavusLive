@@ -10,10 +10,12 @@
 		8F3AC4432DFC47CF00C8612B /* LiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8F3AC4422DFC47CF00C8612B /* LiveKit */; };
 		8F3AC4622E00B58700C8612B /* Daily in Frameworks */ = {isa = PBXBuildFile; productRef = 8F3AC4612E00B58700C8612B /* Daily */; };
 		8F3AC4642E00B58700C8612B /* DailySystemBroadcast in Frameworks */ = {isa = PBXBuildFile; productRef = 8F3AC4632E00B58700C8612B /* DailySystemBroadcast */; };
+		8F3AC4662E01C39600C8612B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8F3AC4652E01C38900C8612B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8F3AC4302DFC474300C8612B /* TavusLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TavusLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3AC4652E01C38900C8612B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -54,6 +56,7 @@
 		8F3AC4272DFC474300C8612B = {
 			isa = PBXGroup;
 			children = (
+				8F3AC4652E01C38900C8612B /* README.md */,
 				8F3AC4322DFC474300C8612B /* TavusLive */,
 				8F3AC4312DFC474300C8612B /* Products */,
 			);
@@ -138,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F3AC4662E01C39600C8612B /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
