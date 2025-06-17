@@ -78,10 +78,6 @@ This project represents a breakthrough in human-AI interaction by combining mult
 ### Installation
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/ai-phone-inhabitant.git
-   cd ai-phone-inhabitant
-   ```
 
 2. **Open in Xcode**
    ```bash
@@ -299,9 +295,3 @@ MIT License - see [LICENSE.md](LICENSE.md) for details.
 **Made with ❤️ for the future of human-AI interaction**
 
 *"The first time you shake your phone and hear the AI react with genuine concern, you'll never look at mobile interfaces the same way again."*
-
-## 🌟 Star History
-
-If this project amazes you, please ⭐ star it on GitHub!
-
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/ai-phone-inhabitant&type=Timeline)](https://star-history.com/#yourusername/ai-phone-inhabitant&Timeline)
